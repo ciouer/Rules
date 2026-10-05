@@ -1,7 +1,7 @@
 # 1. BT下载直连
 protocol(bittorrent) -> direct
 # 2. 自定义域名代理
-domain(full: example.com) -> proxy
+domain(full: example.com, domain: example.org) -> proxy
 # 3. AI服务代理
 domain(geosite: category-ai-!cn) -> proxy
 # 4. GFW名单代理
