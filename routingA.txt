@@ -1,7 +1,12 @@
+# 1. BT下载直连
+protocol(bittorrent) -> direct
+# 2. 自定义域名
+domain(full: example.com) -> proxy
+# 3. AI服务代理
+domain(geosite: category-ai-!cn) -> proxy
+# 4. GFW名单代理
+domain(geosite: gfw) -> proxy
+# 5. TG走代理
+ip(geoip: telegram) -> proxy
+# 6. 默认直连
 default: direct
-# only the services that need it use the proxy
-domain(geosite:google, geosite:youtube, geosite:github, geosite:telegram)->proxy
-domain(geosite:twitch, geosite:cloudflare)->proxy
-domain(full: account.proton.me, domain: nic.eu.org, domain:my.dnshe.com) -> proxy
-domain(geosite:category-social-media-!cn, geosite:category-ai-!cn)->proxy
-ip("91.105.192.0/23", "91.108.4.0/22", "91.108.8.0/21", "91.108.16.0/21", "91.108.56.0/22", "95.161.64.0/20", "149.154.160.0/20", "185.76.151.0/24", "2001:67c:4e8::/48", "2001:b28:f23c::/47", "2001:b28:f23f::/48", "2a0a:f280:203::/48")->proxy
