@@ -8,4 +8,5 @@ domain(geosite: category-ai-!cn) -> proxy
 domain(geosite: gfw) -> proxy
 # TGip代理
 ip(geoip: telegram) -> proxy
+# 默认直连
 default: direct
