@@ -6,7 +6,7 @@ domain(full: example.com, domain: example.org) -> proxy
 domain(geosite: category-ai-!cn) -> proxy
 # GFW名单代理
 domain(geosite: gfw) -> proxy
-# TGip代理
+# TG-ip代理
 ip(geoip: telegram) -> proxy
 # 默认直连
 default: direct
