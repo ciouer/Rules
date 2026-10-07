@@ -1,6 +1,11 @@
+# BT下载直连
 protocol(bittorrent) -> direct
+# 自定义域名代理
 domain(full: example.com, domain: example.org) -> proxy
+# AI有务代理
 domain(geosite: category-ai-!cn) -> proxy
+# GFW名单代理
 domain(geosite: gfw) -> proxy
+# TGip代理
 ip(geoip: telegram) -> proxy
 default: direct
