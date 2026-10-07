@@ -1,3 +1,6 @@
+# 局域网与私有网络直连
+domain(geosite:private) -> direct
+ip(geoip:private) -> direct
 # BT下载直连
 protocol(bittorrent) -> direct
 # 自定义域名代理
