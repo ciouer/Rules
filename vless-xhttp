@@ -15,13 +15,4 @@
 (http.request.uri.path contains ".git") or
 (http.request.uri.path contains "jenkins") or
 (http.request.uri.path contains "actuator") or
-(http.request.uri.path contains "cgi-b") or
-(http.user_agent contains "python") or
-(http.user_agent contains "libwww-perl") or
-(http.user_agent contains "Nmap") or
-(http.user_agent contains "Hydra") or
-(http.user_agent contains "DirBuster") or
-(http.user_agent contains "Fuzz") or
-(http.request.version eq "HTTP/1.0") or
-(http.request.method in {"POST" "GET"}) or
-(http.user_agent eq "")
+(http.request.uri.path contains "cgi-b")
