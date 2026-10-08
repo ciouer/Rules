@@ -5,6 +5,7 @@ ip(geoip:private)->direct
 protocol(bittorrent)->direct
 # 域名分流
 domain(full: example.com, domain: example.org)->proxy
+domain(geosite:.cloudflare, geosite:, geosite:, geosite:)->proxy
 domain(geosite:category-ai-!cn)->proxy
 domain(geosite:gfw)->proxy
 domain(geosite:cn)->direct
