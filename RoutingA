@@ -4,7 +4,7 @@ ip(geoip:private)->direct
 # BT下载直连
 protocol(bittorrent)->direct
 # 域名分流
-domain(full: dnshe.com, domain: example.org)->proxy
+domain(full:dnshe.com, domain:example.org)->proxy
 domain(geosite:telegram, geosite:cloudflare)->proxy
 domain(geosite:category-ai-!cn)->proxy
 domain(geosite:gfw)->proxy
