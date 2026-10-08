@@ -5,12 +5,11 @@ ip(geoip:private)->direct
 protocol(bittorrent)->direct
 # 域名分流
 domain(full: example.com, domain: example.org)->proxy
-domain(geosite:.cloudflare, geosite:, geosite:, geosite:)->proxy
+domain(geosite:telegram, geosite:cloudflare, geosite:, geosite:)->proxy
 domain(geosite:category-ai-!cn)->proxy
 domain(geosite:gfw)->proxy
 domain(geosite:cn)->direct
 # ip-代理
-ip(geoip:telegram)->proxy
 ip(geoip:hk, geoip:mo)->proxy
 ip(geoip:cn)->direct
 # 默认直连
