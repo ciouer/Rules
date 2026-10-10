@@ -1,6 +1,6 @@
 import { connect as cfConnect } from "cloudflare:sockets";
-const 玉衡令 = "";
-const 落霞 = "104.16.0.1";
+const 玉衡令 = "88888888-8888-8888-8888-888888888888";
+const 落霞 = "1.0.0.1";
 const 雨霽期 = 3e5, 晦明期 = 1e4;
 const 寫限 = 10_000, 犬巡 = 60_000, 犬判 = 600_000;
 const 通衢 = {
@@ -9,13 +9,13 @@ const 通衢 = {
     RU: '104.24.9.9', SG: '104.25.10.10', TW: '104.26.11.11', US: '104.27.12.12'
 };
 const 星野 = {
-    JP:new Set(['NRT','KIX','FUK','OKA']),KR:new Set(['ICN']),HK:new Set(['HKG']),TW:new Set(['TPE','KHH']),
+    JP:new Set(['NRT','KIX','FUK','OKA']),KR:new Set(['ICN']),HK:new Set(['HKG']),TW:new Set(['TPE','KHH','RMQ']),
     SG:new Set(['SIN']),MY:new Set(['KUL','JHB']),AU:new Set(['SYD','MEL','BNE','PER','ADL']),
-    US:new Set(['ATL','AUS','BNA','BOS','BUF','BWI','CLE','CLT','CMH','DAL','DEN','DFW','DTW','EWR','FLL','HNL','HOU','IAD','IAH','IND','JAX','LAS','LAX','MCI','MEM','MIA','MKE','MSP','ORD','PHL','PHX','PIT','RDU','SAN','SAT','SEA','SFO','SJC','SLC','STL','TPA','YUL','YVR','YYC','YYZ','MEX','GDL','QRO','BOG','GRU','GIG','EZE','SCL','LIM','CCS','UIO','KIN','PTY','SJU','CUR','AUA','BON','SXM','DOM','BGI','POS','PAP','SDQ','STT','STX']),
-    DE:new Set(['FRA','MUC','DUS','HAM','BER','STR','LEJ','DRS','FMM','PAD','SCN','ZRH','GVA','BRN','BSL','VIE','KLU','SZG','INN','WAW','KRK','WRO','KTW','GDN','POZ','LCJ','LUZ','SZZ','PRG','BRQ','BUD','BTS','OTP','CLJ','SOF','BEG','ZAG','KIV','TBS','EVN','DXB','AUH','DOH','MCT','BAH','JED','RUH','KWI','AMM','BEY','BGW','CAI','ALG','TUN','JNB','CPT','DUR','PLZ','NBO','ACC','LOS','DKR','ABV','MPM','LLW','KGL','ADD','DAR','EBB','NDOLA','OGB']),
-    GB:new Set(['LHR','MAN','EDI','GLA','BFS','BRS','CWL','LCY','LGW','LTN','STN','LPL','NCL','DUB','ORK','SNN','KEF','OSL','TRD','BGO','SVG','ARN','GOT','MMX','BMA','CPH','AAL','BLL','RNN','HEL','TMP','TKU','RIX','TLL','VNO']),
-    NL:new Set(['AMS','BRU','LIL','CRL','LUX','CDG','ORY','LYS','MRS','NCE','BOD','TLS','BIA','MAD','BCN','VLC','OPO','LIS','SCQ','PMI','MAH','IBZ','SVQ','FCO','MXP','LIN','PMO','BRI','FLR','CIA','BLQ','NAP','CTA','ATH','SKG','MLA']),
-    RU:new Set(['DME','SVO','LED','KZN','AER','UFA','ROV','KRR','OVB','VVO','TOF'])
+    US:new Set(['SFO','LAX','SEA','SJC','DEN','ORD','EWR','IAD','MIA','HNL']),
+    DE:new Set(['FRA','MUC','BER','ZRH','VIE']),
+    GB:new Set(['LHR','MAN','EDI']),
+    NL:new Set(['AMS','CDG','MAD','FCO']),
+    RU:new Set(['DME','SVO','LED'])
 };
 const 解花 = new TextDecoder(), 篆印 = new TextEncoder(), 雲記 = new Map(), 池書 = new Map(), 地圖 = new Map();
 function 析衢(v) {
